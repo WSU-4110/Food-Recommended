@@ -19,7 +19,7 @@ def rest_req(request):
         return JsonResponse(serializer.errors, status=400)
 
 @csrf_exempt
-def rest_req_id(request, id):
+def rest_req_id(request, id) :
     try:
         rest = rest.objects.get(id=id)
 
