@@ -11,8 +11,7 @@ class itemSerializer(serializers.ModelSerializer):
     class Meta:
         model = Item
         fields = ['id', 'itemName', 'itemPrice', 'itemRating', 'description', 'restId']
-
-
+        #need to still add reviews
 
 class userSerializer(serializers.ModelSerializer):
     class Meta:
